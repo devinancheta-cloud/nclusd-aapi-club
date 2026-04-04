@@ -16,7 +16,7 @@ const notoSans = Noto_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'AAPI Heritage Club | Lincoln High School',
+  title: 'AAPI Club | Orestimba High School',
   description: 'Celebrating Asian American and Pacific Islander culture, heritage, and community at Orestimba High School. Join us for weekly presentations, games, and occasional potlucks.',
   generator: 'v0.app',
   icons: {
