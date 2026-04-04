@@ -1,11 +1,11 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-import { 
-  Home, 
-  ShoppingBag, 
-  Calendar, 
-  TrendingUp, 
+import {
+  Home,
+  ShoppingBag,
+  Calendar,
+  TrendingUp,
   Settings,
   Users,
   BookOpen,
@@ -40,7 +40,7 @@ export function SidebarNav({ activeSection, onSectionChange, isAdmin = false }: 
           <div className="w-12 h-12 rounded-sm bg-primary flex items-center justify-center relative overflow-hidden">
             <Sparkles className="w-6 h-6 text-primary-foreground relative z-10" />
             {/* Traditional pattern overlay */}
-            <div 
+            <div
               className="absolute inset-0 opacity-20"
               style={{
                 backgroundImage: `
@@ -53,7 +53,7 @@ export function SidebarNav({ activeSection, onSectionChange, isAdmin = false }: 
           </div>
           <div className="hidden lg:block">
             <h1 className="font-serif font-semibold text-lg leading-tight">AAPI Club</h1>
-            <p className="text-xs text-sidebar-foreground/60">Lincoln High</p>
+            <p className="text-xs text-sidebar-foreground/60">Orestimba High</p>
           </div>
         </div>
       </div>
@@ -65,15 +65,15 @@ export function SidebarNav({ activeSection, onSectionChange, isAdmin = false }: 
             Student
           </span>
         </div>
-        
+
         {studentNavItems.map((item) => (
           <button
             key={item.id}
             onClick={() => onSectionChange(item.id)}
             className={cn(
               "w-full flex items-center gap-3 px-4 lg:px-6 py-3 transition-all relative group",
-              activeSection === item.id 
-                ? "bg-sidebar-accent text-sidebar-accent-foreground" 
+              activeSection === item.id
+                ? "bg-sidebar-accent text-sidebar-accent-foreground"
                 : "hover:bg-sidebar-accent/50"
             )}
           >
@@ -81,16 +81,16 @@ export function SidebarNav({ activeSection, onSectionChange, isAdmin = false }: 
             {activeSection === item.id && (
               <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-primary rounded-r-sm" />
             )}
-            
+
             <div className={cn(
               "w-10 h-10 rounded-sm flex items-center justify-center transition-colors",
-              activeSection === item.id 
-                ? "bg-primary text-primary-foreground" 
+              activeSection === item.id
+                ? "bg-primary text-primary-foreground"
                 : "bg-sidebar-accent/30 group-hover:bg-sidebar-accent"
             )}>
               <item.icon className="w-5 h-5" />
             </div>
-            
+
             <div className="hidden lg:block text-left">
               <span className="block font-medium text-sm">{item.label}</span>
               <span className="block text-xs text-sidebar-foreground/50">{item.description}</span>
@@ -106,31 +106,31 @@ export function SidebarNav({ activeSection, onSectionChange, isAdmin = false }: 
               </span>
               <div className="lg:hidden mx-3 h-px bg-sidebar-border my-2" />
             </div>
-            
+
             {adminNavItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => onSectionChange(item.id)}
                 className={cn(
                   "w-full flex items-center gap-3 px-4 lg:px-6 py-3 transition-all relative group",
-                  activeSection === item.id 
-                    ? "bg-sidebar-accent text-sidebar-accent-foreground" 
+                  activeSection === item.id
+                    ? "bg-sidebar-accent text-sidebar-accent-foreground"
                     : "hover:bg-sidebar-accent/50"
                 )}
               >
                 {activeSection === item.id && (
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-accent rounded-r-sm" />
                 )}
-                
+
                 <div className={cn(
                   "w-10 h-10 rounded-sm flex items-center justify-center transition-colors",
-                  activeSection === item.id 
-                    ? "bg-accent text-accent-foreground" 
+                  activeSection === item.id
+                    ? "bg-accent text-accent-foreground"
                     : "bg-sidebar-accent/30 group-hover:bg-sidebar-accent"
                 )}>
                   <item.icon className="w-5 h-5" />
                 </div>
-                
+
                 <div className="hidden lg:block text-left">
                   <span className="block font-medium text-sm">{item.label}</span>
                   <span className="block text-xs text-sidebar-foreground/50">{item.description}</span>

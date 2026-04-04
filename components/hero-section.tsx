@@ -5,45 +5,45 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Calendar, Users, BookOpen, MapPin, Sparkles, Heart } from "lucide-react"
 
 const quickLinks = [
-  { 
-    title: "Join Club", 
-    description: "Sign up for membership", 
-    icon: Users, 
+  {
+    title: "Join Club",
+    description: "Sign up for membership",
+    icon: Users,
     href: "#",
     color: "bg-primary/10 hover:bg-primary/20 border-primary/20"
   },
-  { 
-    title: "Field Trips", 
-    description: "Upcoming cultural visits", 
-    icon: MapPin, 
+  {
+    title: "Field Trips",
+    description: "Upcoming cultural visits",
+    icon: MapPin,
     href: "#",
     color: "bg-accent/10 hover:bg-accent/20 border-accent/30"
   },
-  { 
-    title: "Events", 
-    description: "Lunar New Year & more", 
-    icon: Calendar, 
+  {
+    title: "Events",
+    description: "Lunar New Year & more",
+    icon: Calendar,
     href: "#",
     color: "bg-primary/10 hover:bg-primary/20 border-primary/20"
   },
-  { 
-    title: "Resources", 
-    description: "Learn about AAPI culture", 
-    icon: BookOpen, 
+  {
+    title: "Resources",
+    description: "Learn about AAPI culture",
+    icon: BookOpen,
     href: "#",
     color: "bg-accent/10 hover:bg-accent/20 border-accent/30"
   },
-  { 
-    title: "Volunteer", 
-    description: "Community service hours", 
-    icon: Heart, 
+  {
+    title: "Volunteer",
+    description: "Community service hours",
+    icon: Heart,
     href: "#",
     color: "bg-primary/10 hover:bg-primary/20 border-primary/20"
   },
-  { 
-    title: "Club Shop", 
-    description: "Merch & fundraising", 
-    icon: Sparkles, 
+  {
+    title: "Club Shop",
+    description: "Merch & fundraising",
+    icon: Sparkles,
     href: "#",
     color: "bg-accent/10 hover:bg-accent/20 border-accent/30"
   },
@@ -54,7 +54,7 @@ export function HeroSection() {
     <section className="space-y-6">
       {/* Hero Banner with ink-wash style background */}
       <LatticeFrame variant="red" size="lg">
-        <div 
+        <div
           className="relative overflow-hidden rounded-sm min-h-[280px] flex items-center"
           style={{
             background: `
@@ -68,7 +68,7 @@ export function HeroSection() {
           }}
         >
           {/* Ink wash texture overlay */}
-          <div 
+          <div
             className="absolute inset-0 opacity-30"
             style={{
               backgroundImage: `
@@ -78,9 +78,9 @@ export function HeroSection() {
               `
             }}
           />
-          
+
           {/* Decorative cloud/mountain silhouette */}
-          <div 
+          <div
             className="absolute bottom-0 left-0 right-0 h-24 opacity-20"
             style={{
               background: `
@@ -88,7 +88,7 @@ export function HeroSection() {
               `
             }}
           />
-          
+
           {/* Content */}
           <div className="relative z-10 p-8 lg:p-12 text-white max-w-2xl">
             <div className="flex items-center gap-2 mb-4">
@@ -97,16 +97,16 @@ export function HeroSection() {
                 Asian American Pacific Islander
               </span>
             </div>
-            
+
             <h1 className="font-serif text-4xl lg:text-5xl font-bold mb-4 leading-tight text-balance">
               Heritage Club
             </h1>
-            
+
             <p className="text-white/80 text-lg mb-6 leading-relaxed max-w-lg">
-              Celebrating culture, building community, and honoring our diverse Asian American 
-              and Pacific Islander traditions at Lincoln High School.
+              Celebrating culture, building community, and honoring our diverse Asian American
+              and Pacific Islander traditions at Orestimba High School.
             </p>
-            
+
             <div className="flex flex-wrap gap-3">
               <Button className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
                 Join Us Today
@@ -117,10 +117,10 @@ export function HeroSection() {
               </Button>
             </div>
           </div>
-          
+
           {/* Decorative seal */}
           <div className="absolute right-8 top-8 w-20 h-20 opacity-30 hidden lg:block">
-            <div 
+            <div
               className="w-full h-full rounded-full border-2 border-accent flex items-center justify-center"
               style={{
                 backgroundImage: `
@@ -129,7 +129,7 @@ export function HeroSection() {
               }}
             >
               <span className="text-accent font-serif text-xs text-center leading-tight">
-                Est.<br/>2024
+                Est.<br />2024
               </span>
             </div>
           </div>
@@ -142,7 +142,7 @@ export function HeroSection() {
           <span className="w-1 h-6 bg-primary rounded-sm" />
           Quick Links
         </h2>
-        
+
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
           {quickLinks.map((link) => (
             <a
