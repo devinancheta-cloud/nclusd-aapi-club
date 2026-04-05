@@ -1,9 +1,8 @@
 import Link from 'next/link'
-import { LatticeFrame } from "../../components/ui/lattice-frame"
+import { LatticeFrame } from "@/components/ui/lattice-frame"
 
 
 {/* Heritage/Culture View */}
-          {activeSection === "culture" && (
             <div className="space-y-6">
               <h1 className="font-serif text-2xl font-bold flex items-center gap-3">
                 <span className="w-1 h-8 bg-primary rounded-sm" />
@@ -31,4 +30,3 @@ import { LatticeFrame } from "../../components/ui/lattice-frame"
                 ))}
               </div>
             </div>
-          )}
