@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import { LatticeFrame } from "@/components/ui/lattice-frame"
-
+import { LatticeFrame } from "../../components/lattice-frame"
 
 {/* Heritage/Culture View */}
             <div className="space-y-6">
