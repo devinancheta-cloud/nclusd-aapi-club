@@ -16,7 +16,7 @@ const quickLinks = [
     title: "Field Trips",
     description: "Upcoming cultural visits",
     icon: MapPin,
-    href: "#",
+    href: "trips",
     color: "bg-accent/10 hover:bg-accent/20 border-accent/30"
   },
   {
@@ -44,7 +44,7 @@ const quickLinks = [
     title: "Club Shop",
     description: "Merch & fundraising",
     icon: Sparkles,
-    href: "#",
+    href: "shop",
     color: "bg-accent/10 hover:bg-accent/20 border-accent/30"
   },
 ]
