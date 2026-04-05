@@ -1,4 +1,6 @@
-# v0-aapi-club-website
+# Asian American and Pacific Islander Club at Orestimba High School
+
+The NCLUSD AAPI Club was made to promote an inclusive community between those of Asian and Pacific Islander heritage at Orestimba, as well as bringing together others who would like to participate. I built this tool to facilitate that process while also maintaining club organization and developing my coding foundations further alongside AI.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
 
