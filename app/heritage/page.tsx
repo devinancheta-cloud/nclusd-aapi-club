@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import { LatticeFrame } from "@/components/ui/lattice-frame"
+
 {/* Heritage/Culture View */}
           {activeSection === "culture" && (
             <div className="space-y-6">
